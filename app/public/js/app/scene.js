@@ -54,6 +54,8 @@ function(_, AppParams, Utils, loader_texts, animator){
         requirejs(["common/server_queue"], function(ServerQueue){
             ServerQueue.add_request({});
         });
+
+        //this.on_loaded_user_state();
     };
 
     Scene.prototype.on_loaded_user_state = function() {

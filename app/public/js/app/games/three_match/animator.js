@@ -134,7 +134,7 @@ define(["timeline_lite", "proton"], function (tl, prot) {
     };
 
     Animator.prototype.createProton = function() {
-        var texture = new PIXI.Texture.fromImage("assets/particle.png");
+        var texture = new PIXI.Texture.fromImage("imgs/particle.png");
         this.proton = new Proton();
         var emitter = new Proton.BehaviourEmitter();
         emitter.rate = new Proton.Rate(new Proton.Span(15, 30), new Proton.Span(.2, .5));

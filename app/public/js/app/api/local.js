@@ -22,7 +22,7 @@ define(["api/common"], function(CommonApi){
         var prof = new UserProfile();
         prof.first_name = "Имя";
         prof.last_name = "Фамилия";
-        prof.img50 = "assets/loader/load_image.png";
+        prof.img50 = "imgs/loader/load_image.png";
         prof.sex = 2;
         res.push(prof);
         return res;

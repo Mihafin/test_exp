@@ -27,13 +27,13 @@ define(["pixi", "ui/settings", "games/three_match_game", "app_params" ], functio
         //----test game----
         var game_data = {name: "three_match_game",
             field: [
+                "11111100",
                 "11111111",
+                "11111100",
                 "11111111",
+                "11111100",
                 "11111111",
-                "11111111",
-                "11111111",
-                "11111111",
-                "11111111",
+                "11111100",
                 "11111111"
             ],
             possible_types: [

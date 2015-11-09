@@ -8,7 +8,7 @@ define(["pixi", "common/utils", "timeline_lite", "scene"], function(__, Utils, t
     SettingsBar.prototype.constructor = SettingsBar;
 
     SettingsBar.prototype.init_sound_icon = function(){
-        this.sound_icon = new PIXI.Sprite.fromImage("assets/fullscreen.png");
+        this.sound_icon = new PIXI.Sprite.fromImage("imgs/fullscreen.png");
         this.sound_icon.interactive = true;
         this.sound_icon.on('click', this.sound_icon_click.bind(this));
         this.sound_icon.buttonMode = true;

@@ -22,8 +22,8 @@ function (Cube, Utils, Processor, animator) {
 
     ThreeMatchGameField.prototype = Object.create(PIXI.Container.prototype);
     ThreeMatchGameField.prototype.constructor = ThreeMatchGameField;
-    ThreeMatchGameField.prototype.pop_sound = "assets/sounds/bubble_pop.mp3";
-    ThreeMatchGameField.prototype.bell_sound = "assets/sounds/bell1.mp3";
+    ThreeMatchGameField.prototype.pop_sound = "sounds/bubble_pop.mp3";
+    ThreeMatchGameField.prototype.bell_sound = "sounds/bell1.mp3";
 
     ThreeMatchGameField.prototype.init = function (init_data, on_load, game) {
         this.game = game;
@@ -237,7 +237,7 @@ function (Cube, Utils, Processor, animator) {
             return;
         }
         for (var i = 0; i < COLOR_CNT; i++) {
-            PIXI.loader.add("c" + i, "assets/cub" + (i + 1) + ".png");
+            PIXI.loader.add("c" + i, "imgs/cub" + (i + 1) + ".png");
         }
         PIXI.loader.load(this.on_art_loaded.bind(this));
     };
