@@ -6,7 +6,7 @@ module.exports = function (shipit) {
             workspace: '/tmp/app1',
             deployTo: '/home/deploy/app1',
             repositoryUrl: 'https://github.com/mihafin/test_exp.git',
-            ignores: ['.git', 'node_modules'],
+            ignores: ['.git'],
             keepReleases: 2,
             deleteOnRollback: false,
             //key: '/path/to/key',
